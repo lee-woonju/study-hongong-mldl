@@ -5,7 +5,7 @@
 - **Libraries** : scikit-learn, pandas, numpy, matplotlib
 
 ## 학습 로그
----
+
 ### 2026.04.22. Chapter 04-1. 로지스틱 회귀
 * 로지스틱 회귀는 사실 선형 방정식을 사용하는 **분류 모델**
 * 이진 분류
