@@ -12,7 +12,7 @@
 - 설정
   - (keras) model.compile(옵티마이저, 손실함수)
   - (pytorch) 코드 상단에 각각 객체로 선언
--  기울기 초기화
+- 기울기 초기화
   - (keras) 내부에서 자동으로 수행
   - (pytorch) optimizer.zero_grad()
 -  순전파/추론
