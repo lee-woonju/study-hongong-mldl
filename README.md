@@ -15,16 +15,16 @@
 - 기울기 초기화
   - (keras) 내부에서 자동으로 수행
   - (pytorch) optimizer.zero_grad()
--  순전파/추론
+- 순전파/추론
   - (keras) 내부에서 자동으로 수행
   - (pytorch) ouputs = model(inputs)
--  손실 계산 / 채점
+- 손실 계산 / 채점
   - (keras) 내부에서 자동으로 수행
   - (pytorch) loss = criterion(outputs, targets)
--  역전파/오차 역전파
+- 역전파/오차 역전파
   - (keras) 내부에서 자동으로 수행
   - (pytorch) loss.backward()
--  모델 학습 / 훈련 루프
+- 모델 학습 / 훈련 루프
   - (keras) model.fit(X, y, ephochs=5)
   - (pytorch) 위 단계를 직접 for문으로 제어
 - 순전파?역전파?
