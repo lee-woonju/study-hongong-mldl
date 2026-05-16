@@ -24,7 +24,7 @@
 -  역전파/오차 역전파
   - (keras) 내부에서 자동으로 수행
   - (pytorch) loss.backward()
--  모델 학습 / 훈련 루프 
+-  모델 학습 / 훈련 루프
   - (keras) model.fit(X, y, ephochs=5)
   - (pytorch) 위 단계를 직접 for문으로 제어
 - 순전파?역전파?
