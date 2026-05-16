@@ -5,7 +5,33 @@
 - **Libraries** : scikit-learn, pandas, numpy, matplotlib
 
 ## 학습 로그
+### 2026.05.16. Chapter 07-2. 심층 신경망 -파이토치
+- 모델 설계
+  - (keras) Dense
+  - (pytorch) nn.Linear + nn.ReLU
+- 설정
+  - (keras) model.compile(옵티마이저, 손실함수)
+  - (pytorch) 코드 상단에 각각 객체로 선언
+-  기울기 초기화
+  - (keras) 내부에서 자동으로 수행
+  - (pytorch) optimizer.zero_grad()
+-  순전파/추론
+  - (keras) 내부에서 자동으로 수행
+  - (pytorch) ouputs = model(inputs)
+-  손실 계산 / 채점
+  - (keras) 내부에서 자동으로 수행
+  - (pytorch) loss = criterion(outputs, targets)
+-  역전파/오차 역전파
+  - (keras) 내부에서 자동으로 수행
+  - (pytorch) loss.backward()
+-  모델 학습 / 훈련 루프 
+  - (keras) model.fit(X, y, ephochs=5)
+  - (pytorch) 위 단계를 직접 for문으로 제어
+- 순전파?역전파?
+  - 순전파 : 데이터 입력 -> 예측값 출력(앞으로 진행)
+  - 역전파 : 오차 발생 -> 오답 원인(기울기) 계산(뒤로 진행)ㄴ
 
+---
 ### 2026.05.13. Chapter 07-2. 심층 신경망
 - keras
   - keras.Sequential() : 층을 순서대로 쌓아 올리는 가장 간단한 방법, 모델 구성할 때 사용
